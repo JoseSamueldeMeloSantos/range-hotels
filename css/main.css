@@ -54,6 +54,7 @@ h1,h2,h3,h4 {font-family: "Oxygen", sans-serif;}
 
     .top_header_nav {
         background-color: initial;
+        margin: auto;
     }
 
     .top_header_nav li {
@@ -74,6 +75,10 @@ h1,h2,h3,h4 {font-family: "Oxygen", sans-serif;}
 
     .heroBanner {
         background-color: var(--prinary-color);
+    }
+
+    .top_header_logo  {
+        display: none;
     }
 }
 
@@ -143,6 +148,14 @@ h1,h2,h3,h4 {font-family: "Oxygen", sans-serif;}
         margin: initial;
         margin-bottom: 4em;
         width: 75%;
+    }
+
+      .top_header_logo {
+        display: initial;
+    }
+
+    .top_header_nav {
+        margin: initial;
     }
 }
 
@@ -288,4 +301,11 @@ min-width: 74em -----------> col-xl
     .mainContent_img img {
         max-width: 282px;
     }
+}
+
+.footer {
+    background-color: #25303e;
+    color: gray;
+    text-align: center;
+    padding: 2em;
 }
