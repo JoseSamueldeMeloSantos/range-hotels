@@ -172,6 +172,7 @@ h1,h2,h3,h4 {font-family: "Oxygen", sans-serif;}
 .middle-content {
     background-color: #f6f6f6;
     text-align: center;
+    padding: 2em;
 }
 
 .middle-content a {
@@ -205,7 +206,6 @@ min-width: 74em -----------> col-xl
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding-top: 1.5em;
 }
 
 .col {
@@ -225,8 +225,33 @@ min-width: 74em -----------> col-xl
 }
 
 @media screen and (min-width: 74em) {
-    .col-md-6 {
+    .col-xl-3 {
                 /*width - gap*/
         width: calc(25% - 1rem);
     }
+
+    .col-xl-6 {
+        width: calc(50% - 1rem);
+    }
+}
+
+.mainContent {
+    padding: 2em;
+}
+
+.mainContent p {
+    line-height: 1.2;
+}
+
+.mainContent_title {
+    text-transform: uppercase;
+    color: var(--prinary-color);
+    font-weight: normal;
+    letter-spacing: .2em;
+    letter-spacing: .2em;
+    font-size: 1.25em;
+}
+
+.mainContent .row {
+    row-gap: 4em;
 }
