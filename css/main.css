@@ -253,5 +253,39 @@ min-width: 74em -----------> col-xl
 }
 
 .mainContent .row {
+    /*para colocar o gap so na row*/
     row-gap: 4em;
+
+    /* 
+    para colocar gap so na column
+    column-gap: ;
+
+    outra forma de escrever
+    gap: row colum;
+    */
+}
+
+.mainContent_article {
+    container: mainContent_article / inline-size;
+}
+
+
+@container mainContent_article (min-width: 43.75em) {
+
+    /*não da para selecionar um container e mudar um atributo dele proprio
+    
+    obs:por isso criamos uma div container so para aplicar o css
+    */
+    .mainContent_container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .mainContent_title {
+        margin-top: 0;
+    }
+
+    .mainContent_img img {
+        max-width: 282px;
+    }
 }
